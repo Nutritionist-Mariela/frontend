@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html,
+body {
+    font-family: 'Open Sans', serif;
+    font-weight: 400;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+#footer,
+#footer p {
+    background-color: #857AA5;
+    color: white;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #857AA5;
+}
+
+.nav-item {
+    color: white;
+    font-size: 1.20em;
+    font-family: 'Open Sans', serif;
+    font-weight: 400;
+}
+
+/* Botones */
+.button-custom:hover {
+    outline: 2px solid #ffffff9c;
+    outline-offset: 1px;
+}
+
+.submit1 {
+    background-color: #857AA5 !important;
+    color: white !important;
+}
+
+.submit2 {
+    background-color: #7CAE7A !important;
+    color: white !important;
+}
+
+span {
+    color: white;
+}
+
+/* Imagenes, iconos, logos */
+.imagen {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+i {
+    color: #ffffff;
+}
+
+.icon {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+}
+
+.icon:hover {
+    opacity: 0.9;
+}
+
+#imagen-sobremi {
+    border: 3px solid #7CAE7A;
+}
+
+img.icon {
+    width: 50px;
+}
+
+#whatsapp-icon {
+    bottom: 60px;
+}
+
+#facebook-icon {
+    bottom: 120px;
+}
+
+#instagram-icon {
+    bottom: 180px;
+}
+
+#gmail-icon {
+    bottom: 240px;
+}
+
+/* Titulos y textos */
+.titulo {
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #7CAE7A;
+}
+
+/* Links */
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #4A314D;
+}
+
+/* Formularios */
+
+#container-form {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#outline-form {
+    background-color: #857aa526;
+    padding: 2em;
+}
+
+/* Container sobre mi */
+
+#fila-containersobremi {
+    margin-top: 2.4em;
+    margin-bottom: 2.4em;
+}
