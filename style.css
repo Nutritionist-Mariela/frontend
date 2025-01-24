@@ -56,6 +56,8 @@ span {
     background-size: cover;
     background-position: center center;
     width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
 .card:hover {
@@ -86,10 +88,6 @@ i {
     opacity: 0.9;
 }
 
-#imagen-sobremi {
-    border: 3px solid #28A745;
-}
-
 img.icon {
     width: 50px;
 }
@@ -117,8 +115,9 @@ img.icon {
     margin: 0 auto;
 }
 
-.subtitulo {
-    color: #7CAE7A;
+h1.subtitulo {
+    color: #313131;
+    font-size: 2.5em;
 }
 
 
@@ -126,6 +125,7 @@ p {
     font-size: 1em;
     text-align: justify;
 }
+
 
 /* Links */
 
