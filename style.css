@@ -37,12 +37,6 @@ body {
 
 }
 
-/* Botones */
-.button-custom:hover {
-    outline: 2px solid #ffffff9c;
-    outline-offset: 1px;
-}
-
 .submit1 {
     background-color: #857AA5 !important;
     color: white !important;
@@ -216,7 +210,7 @@ a:hover {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    background-color: #28a745 !important;
+    background-color: #857AA5 !important;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -228,7 +222,7 @@ a:hover {
 .cta-button:focus {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    background-color: #218838 !important;
+    background-color: #776b9b !important;
     text-decoration: none;
 }
 
