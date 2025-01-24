@@ -162,6 +162,12 @@ p {
     .form-label {
         font-size: 0.8em;
     }
+
+    .social-icons {
+        top: 5px;
+        right: 5px;
+    }
+
 }
 
 /* Para pantallas mayores a 768px */
@@ -191,9 +197,23 @@ p {
         font-size: 1rem;
         margin-top: 1rem;
     }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-link {
+        font-size: 1.5rem;
+    }
+
 }
 
 .container-seccion {
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.iconoSocial{
+    color: #857AA5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
