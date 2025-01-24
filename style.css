@@ -221,6 +221,7 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     text-decoration: none;
+    color: white;
 }
 
 .cta-button:hover,
