@@ -5,6 +5,7 @@ body {
     font-family: 'Open Sans', serif;
     font-weight: 400;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -30,7 +31,11 @@ body {
     background-color: #857AA5;
 }
 
-.nav-item {
+.navbar-nav{
+    position: relative;
+}
+
+.nav-item, .dropdown {
     color: white;
     font-size: 1.20em;
 
@@ -214,6 +219,12 @@ p {
 }
 
 .iconoSocial{
-    color: #857AA5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #2c292e;
+    width: 1px !important;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    right: auto;
 }
