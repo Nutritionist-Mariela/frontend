@@ -1,7 +1,3 @@
-/* *{
-    border: 1px solid red;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 html,
@@ -158,11 +154,6 @@ p {
 
 /* Para pantallas hasta 768px */
 @media (max-width: 768px) {
-   
-    * {
-        border: 1px solid red;
-    }
-
     .subtitulo {
         font-size: 1.3em;
     }
@@ -175,11 +166,6 @@ p {
 
 /* Para pantallas mayores a 768px */
 @media (min-width: 769px) {
-
-    * {
-        border: 1px solid blue;
-    }
-
     .subtitulo {
         font-size: 2em
     }
