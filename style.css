@@ -1,3 +1,7 @@
+/* *{
+    border: 1px solid red;
+} */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 html,
@@ -5,7 +9,6 @@ body {
     font-family: 'Open Sans', serif;
     font-weight: 400;
     height: 100%;
-    margin: 0;
 }
 
 body {
@@ -61,11 +64,7 @@ span {
 }
 
 .card:hover {
-    transform: scale(1.05);
-}
-
-.searchicon {
-    color: #ffffff;
+    transform: scale(1.02);
 }
 
 i {
@@ -74,95 +73,25 @@ i {
 
 }
 
-.icon {
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
-    width: 60px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 2000;
-}
-
-.icon:hover {
-    opacity: 0.9;
-}
-
-img.icon {
-    width: 50px;
-}
-
-#whatsapp-icon {
-    bottom: 60px;
-}
-
-#facebook-icon {
-    bottom: 120px;
-}
-
-#instagram-icon {
-    bottom: 180px;
-}
-
-#gmail-icon {
-    bottom: 240px;
-}
-
 /* Titulos y textos */
 .titulo {
-    font-size: 5em;
     max-width: 800px;
     margin: 0 auto;
 }
 
 h1.subtitulo {
     color: #313131;
-    font-size: 2.5em;
 }
 
 
 p {
-    font-size: 1em;
     text-align: justify;
 }
 
 
-/* Links */
-
-a:visited {
-    color: #ffffff;
-}
-
-a:hover {
-    color: #4A314D;
-}
-
-/* Formularios */
-
-#container-form {
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-#outline-form {
-    background-color: #857aa526;
-    padding: 2em;
-}
-
-/* Container sobre mi */
-
-#fila-containersobremi {
-    margin-top: 2.4em;
-    margin-bottom: 2.4em;
-}
-
 /* Banner */
 
 #banner {
-    margin: 0;
-    padding: 0;
     height: 60vh;
     min-height: 400px;
     overflow: hidden;
@@ -206,7 +135,6 @@ a:hover {
 
 .cta-button {
     padding: 12px 30px;
-    font-size: 1.1rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -215,7 +143,7 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 
 .cta-button:hover,
@@ -230,17 +158,13 @@ a:hover {
 
 /* Para pantallas hasta 768px */
 @media (max-width: 768px) {
-    #outline-form {
-        padding: 20px;
+   
+    * {
+        border: 1px solid red;
     }
 
-    textarea {
-        height: 100px;
-    }
-
-    .titulo,
     .subtitulo {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     p,
@@ -251,13 +175,13 @@ a:hover {
 
 /* Para pantallas mayores a 768px */
 @media (min-width: 769px) {
-    #outline-form {
-        padding: 40px;
+
+    * {
+        border: 1px solid blue;
     }
 
-    .titulo,
     .subtitulo {
-        font-size: 1.2em;
+        font-size: 2em
     }
 
     p,
