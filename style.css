@@ -91,6 +91,31 @@ i {
 
 }
 
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    z-index: 2000;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img:hover {
+    animation: bounce 0.5s infinite;
+}
+
 /* Titulos y textos */
 .titulo {
     max-width: 800px;
@@ -233,11 +258,6 @@ p {
 .container-seccion {
     padding-top: 1em;
     padding-bottom: 1em;
-}
-
-.iconoSocial {
-    color: #2c292e;
-    width: 1px !important;
 }
 
 .dropdown-menu {
