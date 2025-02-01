@@ -25,6 +25,10 @@ body {
     flex-direction: column;
 }
 
+#scheduleAppointmentBody {
+    background-color: #eeebf8;
+}
+
 /* Footer */
 #footer,
 #footer p {
@@ -105,9 +109,9 @@ p {
 
 /* Banner */
 
-#banner {
-    height: 60vh;
-    min-height: 400px;
+.banner {
+    height: 40vh;
+    min-height: 300px;
     overflow: hidden;
 }
 
