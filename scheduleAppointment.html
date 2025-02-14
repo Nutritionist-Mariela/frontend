@@ -74,79 +74,71 @@
 
     <br>
     <div class="container">
-        <form class="needs-validation" novalidate>
-            <div class="row">
-                <!-- Nombre -->
-                <div class="col-4">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" required>
-                    <div class="invalid-feedback">
-                        Ingresa tu nombre.
-                    </div>
-                </div>
+        <form class="needs-validation" novalidate action="https://api.marielabarcelo.com/api/appointments"
+            id="appointmentsForm" method="POST">
 
-                <!-- Email -->
-                <div class="col-4">
-                    <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="email" required>
-                    <div class="invalid-feedback">
-                        Ingresa tu correo.
-                    </div>
-                </div>
-
-                <!-- Numero -->
-                <div class="col-4">
-                    <label for="number" class="form-label">Teléfono</label>
-                    <input type="tel" class="form-control" id="number" required>
-                    <div class="invalid-feedback">
-                        Ingresa tu teléfono.
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-
-                <!-- Fecha -->
-                <div class="col-6">
-                    <label for="date" class="form-label">Fecha</label>
-                    <input type="date" class="form-control" id="date" required>
-                    <div class="invalid-feedback">
-                        Elije la fecha.
-                    </div>
-                </div>
-
-                <!-- Hora -->
-                <div class="col-6">
-                    <label for="time" class="form-label">Horario</label>
-                    <select id="time" name="time" class="form-select" required>
-                        <option value="9">09:00</option>
-                        <option value="10">10:00</option>
-                        <option value="11">11:00</option>
-                        <option value="12">12:00</option>
-                        <option value="13">13:00</option>
-                        <option value="14">14:00</option>
-                        <option value="15">15:00</option>
-                        <option value="16">16:00</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Elije el horario.
-                    </div>
-                </div>
+            <!-- Nombre -->
+            <label for=" name" class="form-label ">Nombre*</label>
+            <input type="text" class="form-control" id="name" required style="max-height: 50px;">
+            <div class="invalid-feedback">
+                Ingresa tu nombre.
             </div>
 
+            <!-- Email -->
+            <label for="email" class="form-label">Correo electrónico*</label>
+            <input type="email" class="form-control" id="email" required style="max-height: 50px;">
+            <div class="invalid-feedback">
+                Ingresa tu correo.
+            </div>
+
+            <!-- Numero -->
+            <label for="phone" class="form-label">Teléfono*</label>
+            <input type="tel" class="form-control" id="phone" required style="max-height: 50px;">
+            <div class="invalid-feedback">
+                Ingresa tu teléfono.
+            </div>
             <!-- Motivo -->
-            <div class="row">
-                <div class="col-12">
-                    <label for="reason" class="form-label">Motivo de consulta</label>
-                    <textarea class="form-control" id="reason"></textarea>
-                </div>
-            </div>
-            <br>
-
-            <!-- Submit -->
-            <button type="submit" class="btn button" id="submitAppointment">Agendar consulta</button>
-        </form>
+            <label for="reason" class="form-label">Motivo de consulta</label>
+            <textarea class="form-control" id="reason"></textarea>
     </div>
+
+    <br>
+
+    <!-- Submit -->
+    <div class=" text-center">
+        <button type=" submit" class="btn button" id="submitAppointment">Agendar</button>
+    </div>
+    </form>
+
+    <br>
+
+    <!-- Contenedor para el overlay y los toasts -->
+    <div id="toastContainer" class="toast-container-overlay">
+        <div id="toastSuccess" class="toast align-items-center rounded-3" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="toast-header" style="background-color: #857AA5; color: white">
+                <strong class="me-auto">Mariela Barcelo</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body" style="background-color: white; color: black;">
+                <p>Gracias por agendarte! Nos contactaremos contigo a la brevedad</p>
+            </div>
+        </div>
+
+        <div id="toastError" class="toast align-items-center rounded-3" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="toast-header" style="background-color: #857AA5; color: white">
+                <strong class="me-auto">Mariela Barcelo</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body" style="background-color: #ffffff; color: black;">
+                <p>Algo salió mal. Intenta de nuevo mas tarde.</p>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <br>
 

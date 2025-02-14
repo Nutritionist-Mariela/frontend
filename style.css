@@ -20,14 +20,22 @@ body {
     scroll-behavior: smooth;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
 body {
     display: flex;
     flex-direction: column;
 }
 
-#scheduleAppointmentBody {
-    background-color: #eeebf8;
-}
+
 
 /* Footer */
 #footer,
@@ -81,16 +89,20 @@ span {
     object-fit: contain;
 }
 
-.card:hover {
-    transform: scale(1.02);
-}
-
 i {
     font-size: 3rem;
     color: var(--accent-color);
 
 }
 
+/* Cards */
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+
+/* Buttons */
 
 .whatsapp-button {
     position: fixed;
@@ -116,6 +128,42 @@ i {
     animation: bounce 0.5s infinite;
 }
 
+.submit1 {
+    background-color: #857AA5 !important;
+    color: white !important;
+}
+
+.submit2 {
+    background-color: #7CAE7A !important;
+    color: white !important;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: #857AA5 !important;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white !important;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #776b9b !important;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #857AA5 !important;
+    color: white !important;
+}
+
 /* Titulos y textos */
 .titulo {
     max-width: 800px;
@@ -129,6 +177,10 @@ h1.subtitulo {
 
 p {
     text-align: justify;
+}
+
+span {
+    color: white;
 }
 
 
@@ -215,6 +267,11 @@ p {
         right: 5px;
     }
 
+    form {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
 }
 
 /* Para pantallas mayores a 768px */
@@ -226,6 +283,11 @@ p {
     p,
     .form-label {
         font-size: 1em;
+    }
+
+    form {
+        margin-left: 25%;
+        margin-right: 25%;
     }
 }
 
@@ -253,12 +315,17 @@ p {
         font-size: 1.5rem;
     }
 
+
 }
+
+/* Section */
 
 .container-seccion {
     padding-top: 1em;
     padding-bottom: 1em;
 }
+
+/* Dropdown */
 
 .dropdown-menu {
     position: absolute;
