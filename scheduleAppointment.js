@@ -50,27 +50,52 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Validación de formulario activada");
 });
 
-// Oculta todos los toasts y el fondo
-function hideAllToasts() {
-    document.querySelectorAll(".toast").forEach((toastElement) => {
-        const toast = bootstrap.Toast.getInstance(toastElement) || new bootstrap.Toast(toastElement);
-        toast.hide();
-    });
-    document.getElementById("toastContainer").style.display = "none";
+// Función para mostrar un toast específico
+function showToast(toastId) {
+    const container = document.getElementById('toastContainer');
+    const toast = document.getElementById(toastId);
+
+    // Mostrar el overlay y el toast
+    container.classList.add('show');
+    toast.classList.add('show');
+
+    // Configurar el cierre automático después de 3 segundos
+    setTimeout(() => {
+        hideToast(toastId);
+    }, 3000);
 }
 
-// Muestra un toast y activa el fondo oscuro
-function showToast(toastId) {
-    const toastElement = document.getElementById(toastId);
-    const toastContainer = document.getElementById("toastContainer");
+// Función para ocultar un toast específico
+function hideToast(toastId) {
+    const container = document.getElementById('toastContainer');
+    const toast = document.getElementById(toastId);
 
-    if (toastElement) {
-        const toast = new bootstrap.Toast(toastElement);
-        toastContainer.style.display = "flex"; // Muestra el fondo oscuro
-        toast.show();
+    // Ocultar el toast
+    toast.classList.remove('show');
 
-        toastElement.addEventListener("hidden.bs.toast", () => {
-            toastContainer.style.display = "none";
-        });
+    // Verificar si hay otros toasts visibles
+    const visibleToasts = document.querySelectorAll('.toast.show');
+    if (visibleToasts.length === 0) {
+        // Si no hay toasts visibles, ocultar el overlay
+        container.classList.remove('show');
     }
 }
+
+// Función para ocultar todos los toasts
+function hideAllToasts() {
+    const container = document.getElementById('toastContainer');
+    const toasts = document.querySelectorAll('.toast');
+
+    toasts.forEach(toast => {
+        toast.classList.remove('show');
+    });
+    container.classList.remove('show');
+}
+
+// Agregar event listeners a los botones de cierre
+document.querySelectorAll('.btn-close').forEach(button => {
+    button.addEventListener('click', function () {
+        const toast = this.closest('.toast');
+        hideToast(toast.id);
+    });
+});
