@@ -80,29 +80,93 @@
             </section>
 
             <div class="card-group">
-                <div class="card">
+                <!-- Card de Celiacos -->
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modalCeliacos">
                     <img src="/img/celiacos.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Recetario apto celíacos</h5>
-                        <p class="card-text">Descripcion.</p>
                     </div>
                 </div>
-                <div class="card">
+
+                <!-- Card de Vegetarianos -->
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modalVegetarianos">
                     <img src="/img/veg.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Recetario para vegetarianos</h5>
-                        <p class="card-text">Descripcion</p>
                     </div>
                 </div>
-                <div class="card">
+
+                <!-- Card de Recetas Rápidas -->
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modalRapidas">
                     <img src="/img/generico.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Recetas rapidas</h5>
-                        <p class="card-text">Decripcion</p>
+                        <h5 class="card-title">Recetas rápidas</h5>
                     </div>
                 </div>
             </div>
 
+            <!-- Modal recetario celiacos -->
+            <div class="modal" tabindex="-1" id="modalCeliacos">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Recetario para celíacos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>En este recetario podrás encontrar recetas aptas para celiacos</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.location.href='https://wa.me/59899076258?text=Hola%2C%20me%20interesa%20tu%20recetario%20apto%20para%20celiacos'">
+                                Acceder
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal recetario vegetarianos -->
+            <div class="modal" tabindex="-1" id="modalVegetarianos">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Recetario para vegetarianos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>En este recetario podrás encontrar opciones para una dieta vegetariana.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.location.href='https://wa.me/59899076258?text=Hola%2C%20me%20interesa%20tu%20recetario%20para%20vegetarianos'">
+                                Acceder
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal recetario recetas rapidas -->
+            <div class="modal" tabindex="-1" id="modalRapidas">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Recetas rápidas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>En este recetario podrás encontrar recetas fáciles y rápidas de preparar.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.location.href='https://wa.me/59899076258?text=Hola%2C%20me%20interesa%20tu%20recetario%20de%20recetas%20r%C3%A1pidas'">
+                                Acceder
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
     </main>
