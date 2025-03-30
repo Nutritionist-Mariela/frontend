@@ -1,8 +1,25 @@
-# React + Vite
+# Nutrition Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Designed as a responsive website, this platform introduces Mariela Barceló’s nutrition services.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+-   **HTML5**: Structuring the website content
+-   **CSS3**: Styling the website with custom styles
+-   **Bootstrap 5.3**: Responsive layout and components
+-   **FontAwesome**: Icons for better UI/UX
+-   **React**: A JavaScript library for building dynamic, interactive user interfaces.
+-   **Vite**: A fast and modern build tool for optimizing the development experience.
+
+## Installation & Usage
+
+```bash
+# Clone this repository
+git clone https://github.com/your-username/mariela-nutrition-website.git
+
+# Open index.html in your browser and enjoy! :)
+
+-Tatiana Mazzeo
+```
