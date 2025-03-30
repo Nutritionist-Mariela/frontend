@@ -1,0 +1,13 @@
+ @media (max-width: 768px) {
+     .article-content {
+         font-size: 1.2em;
+     }
+
+ }
+
+ /* Para pantallas mayores a 768px */
+ @media (min-width: 769px) {
+     .article-content {
+         font-size: 0.9em
+     }
+ }

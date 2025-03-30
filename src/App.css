@@ -1,0 +1,66 @@
+/* Para pantallas hasta 768px */
+@media (max-width: 768px) {
+    .subtitulo {
+        font-size: 1.3em;
+    }
+
+    p,
+    .form-label {
+        font-size: 0.8em;
+    }
+
+    .social-icons {
+        top: 5px;
+        right: 5px;
+    }
+
+    form {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+/* Para pantallas mayores a 768px */
+@media (min-width: 769px) {
+    .subtitulo {
+        font-size: 2em
+    }
+
+    p,
+    .form-label {
+        font-size: 1em;
+    }
+
+    form {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    #banner {
+        height: 50vh;
+        min-height: 300px;
+    }
+
+    .banner-title {
+        font-size: calc(1.5rem + 1vw);
+    }
+
+    .cta-button {
+        padding: 10px 24px;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-link {
+        font-size: 1.5rem;
+    }
+
+
+}
