@@ -13,7 +13,7 @@ function App() {
             <Banner></Banner>
             <Services></Services>
             <AboutMe></AboutMe>
-            <WhatsappButton phoneNumber="+59899076258" message="Hola! Me gustaría..." />
+            <WhatsappButton phoneNumber="+59899343545" message="Hola! Me gustaría..." />
             <Footer></Footer>
         </>
     );

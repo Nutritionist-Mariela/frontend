@@ -196,7 +196,7 @@ Además, ir al supermercado con tu lista de compras será más fácil, rápido y
                 )}
             </Modal>
 
-            <WhatsappButton phoneNumber="+59899076258" message="Hola! Me gustaría..." />
+            <WhatsappButton phoneNumber="+59899343545" message="Hola! Me gustaría..." />
 
             <Footer />
         </>

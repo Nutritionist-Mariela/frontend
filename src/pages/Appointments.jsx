@@ -115,7 +115,7 @@ function Appointments() {
             )}
 
             <WhatsappButton
-                phoneNumber="+59899076258"
+                phoneNumber="+59899343545"
                 message="Hola! Me gustaría..."
             />
 
