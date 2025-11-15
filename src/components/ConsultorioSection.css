@@ -1,0 +1,190 @@
+:root {
+    --primary-color: #857AA5;
+    --secondary-color: #776b9b;
+    --hover-color: #776b9b;
+    --text-dark: #313131;
+}
+
+/* Sección */
+.consultorio-section {
+    background-color: #F8F7FC;
+}
+
+/* Título */
+.titulo-consultorio {
+    text-align: center;
+    color: var(--text-dark);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Imagen */
+.consultorio-img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Texto */
+.info-consultorio p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.lista-consultorio {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.lista-consultorio li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+
+.consultorio-img {
+    border-radius: 12px;
+}
+
+.info-consultorio ul {
+    padding-left: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .titulo-consultorio {
+        font-size: 1.7em;
+    }
+
+    .info-consultorio p,
+    .lista-consultorio li {
+        text-align: center;
+    }
+}
+
+.consultorio-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.consultorio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Carrusel dentro de la card */
+.consultorio-card img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Títulos y textos */
+.consultorio-card .card-title {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+.consultorio-card .card-text {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* Listas */
+.lista-consultorio li {
+    margin-bottom: 6px;
+    color: var(--text-dark);
+}
+
+.consultorio-section {
+    background-color: #f8f9fa;
+}
+
+.titulo-consultorio {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.subtitulo-consultorio {
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+.descripcion-consultorio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.boton-mapa {
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-weight: 500;
+}
+
+.consultorio-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s ease;
+}
+
+.consultorio-img:hover {
+    transform: scale(1.03);
+}
+
+/* CINTILLO DIAGONAL con texto centrado */
+.badge-diagonal {
+    position: absolute !important;
+    top: 18px !important;
+    left: -45px !important;
+    transform: rotate(-45deg) !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    width: 160px !important;
+    /* ancho fijo hace que el texto quede EXACTO */
+    height: 32px !important;
+    /* alto fijo para centrar verticalmente */
+
+    color: #fff !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 1px !important;
+    z-index: 999 !important;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 4px !important;
+    pointer-events: none;
+}
+
+/* Colores */
+.badge-diagonal.presencial {
+    background-color: #857AA5 !important;
+}
+
+.badge-diagonal.online {
+    background-color: #4CAF50 !important;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .badge-diagonal {
+        width: 130px !important;
+        height: 28px !important;
+        left: -35px !important;
+        font-size: 0.7rem !important;
+    }
+}

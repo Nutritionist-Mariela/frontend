@@ -4,13 +4,17 @@ import Banner from "./components/Banner";
 import Services from "./components/Services";
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
+import ConsultorioSection from "./components/ConsultorioSection";
 import WhatsappButton from "./components/WhatsappButton";
+
 
 function App() {
     return (
         <>
+
             <NavBar></NavBar>
             <Banner></Banner>
+            <ConsultorioSection />
             <Services></Services>
             <AboutMe></AboutMe>
             <WhatsappButton phoneNumber="+59899343545" message="Hola! Me gustaría..." />
