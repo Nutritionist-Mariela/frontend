@@ -7,11 +7,9 @@ import Footer from "./components/Footer";
 import ConsultorioSection from "./components/ConsultorioSection";
 import WhatsappButton from "./components/WhatsappButton";
 
-
 function App() {
     return (
         <>
-
             <NavBar></NavBar>
             <Banner></Banner>
             <ConsultorioSection />

@@ -17,7 +17,7 @@ function Banner() {
                 <h1 className="banner-title">Cada bocado es una oportunidad para cuidar de ti mismo</h1>
 
                 <div className="banner-buttons">
-                    <a href="https://wa.me/59899076258" target="_blank" rel="noopener noreferrer" className="btn btn-lg cta-button">
+                    <a href="https://wa.me/59899343545" target="_blank" rel="noopener noreferrer" className="btn btn-lg cta-button">
                         Agendar consulta
                     </a>
 
