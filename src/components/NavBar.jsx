@@ -42,7 +42,7 @@ function NavBar() {
                         <NavDropdown className="navBarItem" title="Redes" style={{ color: "white" }}>
                             <NavDropdown.Item href="https://www.instagram.com/licmarielabarcelo/">Instagram</NavDropdown.Item>
                             <NavDropdown.Item href="https://www.facebook.com/profile.php?id=61564011368750">Facebook</NavDropdown.Item>
-                            <NavDropdown.Item href="http://wa.link/k5nn5e">Whatsapp</NavDropdown.Item>
+                            <NavDropdown.Item href="http://wa.link/c18xwf">Whatsapp</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

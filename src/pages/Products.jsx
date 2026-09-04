@@ -38,8 +38,8 @@ function Products() {
                         imagen: item.image?.url
                             ? `https://api.marielabarcelo.com${item.image.url}`
                             : item.attributes?.image?.data?.attributes?.url
-                            ? `https://api.marielabarcelo.com${item.attributes.image.data.attributes.url}`
-                            : defaultProduct.imagen,
+                                ? `https://api.marielabarcelo.com${item.attributes.image.data.attributes.url}`
+                                : defaultProduct.imagen,
                     }));
                     setProductos(formattedProducts);
                 } else {
@@ -128,7 +128,7 @@ function Products() {
                                 onClick={() => {
                                     const producto = productos.find((p) => p.producto === modalShow);
                                     const mensaje = encodeURIComponent(`Hola, me interesa tu recetario ${producto.titulo}`);
-                                    const url = `https://wa.me/59899076258?text=${mensaje}`;
+                                    const url = `https://wa.me/59899343545?text=${mensaje}`;
                                     window.location.href = url;
                                 }}
                             >
@@ -139,7 +139,7 @@ function Products() {
                 )}
             </Modal>
 
-            <WhatsappButton phoneNumber="+59899076258" message="Hola! Me gustaría..." />
+            <WhatsappButton phoneNumber="+59899343545" message="Hola! Me gustaría..." />
 
             <Footer />
         </>

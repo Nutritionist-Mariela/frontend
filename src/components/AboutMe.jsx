@@ -7,7 +7,8 @@ const AboutSection = () => {
     `;
 
     return (
-        <div style={{ backgroundColor: "#e7e3f7" }} className="container-seccion" id="sobremi">
+        <div style={{ backgroundColor: "#F8F7FC" }} className="container-seccion" id="sobremi">
+            <br></br>
             <div className="container">
                 <h1 className="subtitulo">Sobre mí</h1>
             </div>

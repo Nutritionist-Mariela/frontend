@@ -1,7 +1,8 @@
+/* Colores base */
 :root {
     --primary-color: #857AA5;
-    --secondary-color: #7CAE7A;
-    --accent-color: #28A745;
+    --secondary-color: #776b9b;
+    --accent-color: #776b9b;
     --text-dark: #313131;
     --text-light: #666;
     --background-dark: rgba(0, 0, 0, 0.5);
@@ -9,11 +10,56 @@
     --hover-color: #776b9b;
 }
 
-.navBarItem,
-.nav-link {
-    color: white;
-}
-
+/* Navbar fondo */
 .navbar {
     background-color: var(--primary-color);
+}
+
+/* Estilos de texto */
+.navbar .nav-link,
+.navbar .dropdown-toggle,
+.navbar .dropdown-item,
+.navBarItem {
+    color: white !important;
+    transition: all 0.3s ease;
+    /* ← transición como CTA */
+}
+
+/* HOVER estilo CTA (para links de navbar, excepto dropdown items) */
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+    background-color: var(--hover-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    color: white !important;
+}
+
+/* Dropdown menu */
+.navbar .dropdown-menu {
+    background-color: var(--primary-color);
+}
+
+/* Items dentro del dropdown */
+.navbar .dropdown-menu .dropdown-item {
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+/* Hover dentro del dropdown (en estilo CTA también) */
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: var(--hover-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    color: white !important;
+}
+
+/* Flecha del dropdown */
+.navbar .dropdown-toggle::after {
+    border-top-color: white !important;
+}
+
+.navbar .dropdown-toggle:hover::after {
+    border-top-color: white !important;
 }
