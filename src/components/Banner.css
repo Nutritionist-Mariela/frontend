@@ -60,3 +60,39 @@
     background-color: var(--hover-color) !important;
     text-decoration: none;
 }
+
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.banner-buttons .cta-button {
+    margin-top: 0 !important;
+}
+
+.cta-button-outline {
+    background-color: transparent !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+
+.cta-button-outline:hover,
+.cta-button-outline:focus {
+    background-color: white !important;
+    color: var(--primary-color) !important;
+}
+
+@media (max-width: 576px) {
+    .banner-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .banner-buttons .cta-button {
+        width: 100%;
+    }
+}

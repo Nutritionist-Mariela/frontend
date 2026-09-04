@@ -1,63 +1,28 @@
-import React, { useState, useEffect } from "react";
 import "./AboutMe.css";
+import mariela1 from "../assets/mariela1.jpg";
 
 const AboutSection = () => {
-    const [aboutData, setAboutData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchAboutInfo = async () => {
-            try {
-                const response = await fetch("https://api.marielabarcelo.com/api/about?populate=*");
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-
-                const data = await response.json();
-                setAboutData(data);
-                setLoading(false);
-            } catch (error) {
-                console.error("Error fetching about data:", error);
-                setError(error.message);
-                setLoading(false);
-            }
-        };
-
-        fetchAboutInfo();
-    }, []);
-
-    if (loading) return <div className="container text-center py-5">Loading...</div>;
-    if (error) return <div className="container text-center py-5">Error: {error}</div>;
-    if (!aboutData) return <div className="container text-center py-5">No data available</div>;
-
-    const description = aboutData.data.Description[0].children[0].text;
-
-    const imageData = aboutData.data.Cover;
-    const imageUrl = `https://api.marielabarcelo.com${imageData.url}`;
+    const description = `
+        ¡Hola! Soy Mariela Barceló, licenciada en Nutrición por la Universidad de la República (UdelaR). Mi objetivo es ayudarte a mejorar tu bienestar a través de una alimentación equilibrada y personalizada. En cada consulta trabajo de manera cercana y profesional para brindarte el acompañamiento que necesitas en tu camino hacia una mejor alimentación. ¡Juntos encontraremos la mejor estrategia para vos!
+    `;
 
     return (
         <div style={{ backgroundColor: "#e7e3f7" }} className="container-seccion" id="sobremi">
             <div className="container">
-                <h1 className="subtitulo">Sobre mi</h1>
+                <h1 className="subtitulo">Sobre mí</h1>
             </div>
+
             <div className="container">
                 <div className="card shadow-sm rounded border-0">
                     <div className="row g-0 align-items-center">
                         <div className="col-12 col-md-6 text-center">
-                            <img src={imageUrl} className="img-fluid rounded-start h-100" alt="Mariela Barceló" style={{ transition: "transform 0.3s" }} />
+                            <img src={mariela1} className="img-fluid rounded-start h-100" alt="Mariela Barceló" style={{ transition: "transform 0.3s" }} />
                         </div>
+
                         <div className="col-12 col-md-6">
                             <div className="card-body">
                                 <p className="card-text" style={{ lineHeight: "1.7" }}>
-                                    {description.split(". ").map((sentence, index, array) => (
-                                        <React.Fragment key={index}>
-                                            {sentence}
-                                            {index < array.length - 1 ? ". " : ""}
-                                            {index < array.length - 1 && index % 2 === 1 && <br />}
-                                        </React.Fragment>
-                                    ))}
+                                    {description}
                                 </p>
                             </div>
                         </div>

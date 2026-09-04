@@ -31,6 +31,10 @@ function NavBar() {
                             Blog
                         </Nav.Link>
 
+                        <Nav.Link as={RouterNavLink} className="navBarItem" to="/precios" end>
+                            Precios
+                        </Nav.Link>
+
                         <Nav.Link as={RouterNavLink} className="navBarItem" to="/productos" end>
                             Productos
                         </Nav.Link>
